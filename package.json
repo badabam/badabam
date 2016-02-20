@@ -1,0 +1,22 @@
+{
+  "name": "badabam.de",
+  "version": "0.0.1",
+  "description": "Personal website of Jeremias Erbs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ux",
+    "frontend",
+    "javascript",
+    "html5",
+    "css3",
+    "portfolio"
+  ],
+  "author": "Jeremias Erbs",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
+}
