@@ -1,0 +1,16 @@
+.big-shadow {
+  box-shadow: $big-shadow;
+}
+
+.main-heading {
+  color: $c-red;
+  font-size: $fs-big;
+  font-weight: 100;
+  margin: 0 0 30px;
+}
+
+.content-box {
+  background-color: $c-white;
+  display: inline-block;
+  padding: 40px;
+}

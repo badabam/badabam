@@ -1,0 +1,14 @@
+.text-center {
+  text-align: center !important;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

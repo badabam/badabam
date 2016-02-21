@@ -1,0 +1,15 @@
+.tags > * {
+  background-color: $c-gray-dark;
+  border: 1px solid $c-gray-dark;
+  color: $c-white;
+  display: inline-block;
+  font-weight: 300;
+  margin: 0 4px 8px;
+  padding: 2px 8px;
+}
+
+.extra-tag {
+  background-color: $c-white;
+  border-color: $c-red;
+  color: $c-red;
+}

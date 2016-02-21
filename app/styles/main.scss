@@ -1,22 +1,45 @@
 // bower:scss
 // endbower
 @import 'variables';
+@import 'helpers';
+@import 'base';
+@import 'tags';
+@import 'main-header';
+@import 'short-form';
+
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  a,
-  a:link {
-    color: $c-blue;
-  }
+body {
+  background-color: $c-gray-light;
+  color: $c-gray-dark;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 300px;
+}
+
+a,
+a:link {
+  color: $c-blue;
+}
+
+ul {
+  padding: 0;
 }
 
 .browserupgrade {
-  margin: 0;
   background: $c-gray-light;
   color: $c-gray-dark;
+  margin: 0;
   padding: $s-small;
 }
