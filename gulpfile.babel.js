@@ -4,6 +4,7 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import fileinclude from 'gulp-file-include';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -51,8 +52,16 @@ const testLintOptions = {
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
+gulp.task('fileinclude', () => {
+  return gulp.src('app/*.html')
+    .pipe(fileinclude({basepath: 'app/includes'}))
+    .pipe(gulp.dest('.tmp'))
+  ;
+})
+
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
+    .pipe(fileinclude({basepath: 'app/includes'}))
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano()))
@@ -72,6 +81,16 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('icons', () => {
+  return gulp.src('app/icons/**/*')
+    .pipe($.cache($.imagemin({
+      progressive: true,
+      interlaced: true,
+      svgoPlugins: [{cleanupIDs: true}]
+    })))
+    .pipe(gulp.dest('dist/icons'));
+})
+
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
     .concat('app/fonts/**/*'))
@@ -90,7 +109,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['styles', 'scripts', 'fonts', 'fileinclude'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -158,7 +177,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'icons', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
