@@ -56,6 +56,7 @@ gulp.task('fileinclude', () => {
   return gulp.src('app/*.html')
     .pipe(fileinclude({basepath: 'app/includes'}))
     .pipe(gulp.dest('.tmp'))
+    .pipe(reload({stream: true}))
   ;
 })
 
@@ -122,11 +123,11 @@ gulp.task('serve', ['styles', 'scripts', 'fonts', 'fileinclude'], () => {
   });
 
   gulp.watch([
-    'app/*.html',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
+  gulp.watch('app/*.html', ['fileinclude']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
