@@ -4,12 +4,12 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
-//import fileinclude from 'gulp-file-include';
+import series from 'stream-series';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-gulp.task('styles', () => {
+gulp.task('styles', ['inject'], () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -22,6 +22,14 @@ gulp.task('styles', () => {
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('inject', () => {
+  var generics = gulp.src('app/styles/generics/**/*.scss', {read: false});
+  var components = gulp.src('app/styles/components/**/*.scss', {read: false});
+  gulp.src('app/styles/main.scss')
+    .pipe($.inject(series(generics, components), {relative: true})) // This will always inject vendor files before app files
+    .pipe(gulp.dest('app/styles/'));
 });
 
 gulp.task('scripts', () => {

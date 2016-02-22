@@ -1,20 +1,19 @@
+// colors
 $c-white: #fff;
-
 $c-gray-light: #eceef0;
 $c-gray: #c9ced1;
 $c-gray-dark: #858f94;
-
 $c-red: #ff5600;
 $c-blue: #27a4e3;
-
 $c-transparent-black: rgba(0, 0, 0, 0.4);
 
+// shadow
 $big-shadow: 5px 12px 30px $c-transparent-black;
 
+//font size
 $fs-huge: 79px;
 $fs-big: 30px;
 $fs-normal: 18px;
 
-$s-big: 40px;
-$s-normal: 30px;
-$s-small: 12px;
+//grid
+$enable-flex: true !default;

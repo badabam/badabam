@@ -1,18 +1,20 @@
 // bower:scss
 // endbower
 
-@import 'variables';
-@import 'base';
-@import 'helpers';
+@import "variables";
+@import "base";
+@import "helpers";
 
-// generics
-@import 'generics/big-shadow';
-@import 'generics/content-box';
-@import 'generics/main-heading';
-@import 'generics/tags';
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/utilities-responsive";
 
-//components
-@import 'components/browserupgrade';
-@import 'components/main-header';
-@import 'components/short-form';
-@import 'components/about-me';
+/* inject:scss */
+@import "generics/_big-shadow.scss";
+@import "generics/_content-box.scss";
+@import "generics/_main-heading.scss";
+@import "generics/_tags.scss";
+@import "components/_about-me.scss";
+@import "components/_browserupgrade.scss";
+@import "components/_main-header.scss";
+@import "components/_short-form.scss";
+/* endinject */
