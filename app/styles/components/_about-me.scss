@@ -1,0 +1,21 @@
+.about-me {
+  @extend .big-shadow, .content-box;
+
+  margin: 80px auto;
+
+  h1 {
+    @extend .main-heading;
+  }
+
+  img {
+    @extend .big-shadow;
+    height: auto;
+    margin-left: -190px;
+    width: 200px;
+  }
+
+  .shift-right {
+    float: right;
+    width: 440px;
+  }
+}

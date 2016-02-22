@@ -3,6 +3,10 @@
 
   margin: 80px auto;
 
+  h1 {
+    @extend .main-heading;
+  }
+
   p {
     margin: 40px 0;
   }
