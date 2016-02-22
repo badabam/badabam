@@ -17,6 +17,10 @@ body {
   font-weight: 200;
   line-height: 1.4;
   margin-bottom: 300px;
+
+  @media (max-width: 640px) {
+    font-weight: 300;
+  }
 }
 
 a,
