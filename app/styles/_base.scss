@@ -1,16 +1,29 @@
-.big-shadow {
-  box-shadow: $big-shadow;
+* {
+  box-sizing: border-box;
 }
 
-.main-heading {
-  color: $c-red;
-  font-size: $fs-big;
-  font-weight: 100;
-  margin: 0 0 30px;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.content-box {
-  background-color: $c-white;
-  display: inline-block;
-  padding: 40px;
+body {
+  background-color: $c-gray-light;
+  color: $c-gray-dark;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 300px;
+}
+
+a,
+a:link {
+  color: $c-blue;
+}
+
+ul {
+  padding: 0;
 }

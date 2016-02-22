@@ -1,45 +1,17 @@
 // bower:scss
 // endbower
+
 @import 'variables';
-@import 'helpers';
 @import 'base';
-@import 'tags';
-@import 'main-header';
-@import 'short-form';
+@import 'helpers';
 
-* {
-  box-sizing: border-box;
-}
+// generics
+@import 'generics/big-shadow';
+@import 'generics/content-box';
+@import 'generics/main-heading';
+@import 'generics/tags';
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: $c-gray-light;
-  color: $c-gray-dark;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.4;
-  margin-bottom: 300px;
-}
-
-a,
-a:link {
-  color: $c-blue;
-}
-
-ul {
-  padding: 0;
-}
-
-.browserupgrade {
-  background: $c-gray-light;
-  color: $c-gray-dark;
-  margin: 0;
-  padding: $s-small;
-}
+//components
+@import 'components/browserupgrade';
+@import 'components/main-header';
+@import 'components/short-form';
