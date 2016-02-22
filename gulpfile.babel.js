@@ -83,13 +83,13 @@ gulp.task('images', () => {
 });
 
 gulp.task('icons', () => {
-  return gulp.src('app/icons/**/*')
+  return gulp.src('app/_icons/*')
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
       svgoPlugins: [{cleanupIDs: true}]
     })))
-    .pipe(gulp.dest('dist/icons'));
+    .pipe(gulp.dest('dist/_icons'));
 })
 
 gulp.task('fonts', () => {
