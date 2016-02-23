@@ -10,24 +10,62 @@
   }
 }
 
-
 .short-form__contact {
   color: $c-red;
+  position: relative;
 
   @include media-breakpoint-up(sm) {
     display: flex;
     justify-content: space-between;
   }
 
-  a {
-    color: $c-red !important;
+    input[type=checkbox]:not(:checked) + label:before,
+    input[type=checkbox]:not(:checked) + label:after{
+        display: none;
+    }
+
+  label[for="toggle-address"] {
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      @extend .inverted, .big-shadow;
+
+      border-radius: 3px;
+      bottom: -100%;
+      content: 'Lessers Passage 10, 22767 Hamburg';
+      padding: 12px;
+      position: absolute;
+      white-space: nowrap;
+      margin-bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:after {
+      border: 10px solid transparent;
+      border-top-color: $c-gray-dark;
+      left: 50%;
+      content: '';
+      margin-bottom: 70px;
+      position: absolute;
+      bottom: -100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  a:link,
+  a:visited,
+  a:active,
+  label {
+    color: $c-red;
     text-decoration: none;
 
     @include media-breakpoint-only(xs) {
       background-color: $c-gray-light;
       border-radius: 3px;
       display: block;
-      padding: 0 6px;
+      padding: 4px 12px;
       margin-bottom: 12px;
     }
   }
