@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-    <!-- Xbuild:js scripts/vendor/modernizr.js -->
-    <!-- Xendbuild -->
   </head>
   <body>
     @@include('meta/browserupgrade.html')
@@ -32,12 +30,11 @@
 
     @@include('meta/google-analytics.html')
 
-    <!-- Xbuild:js scripts/vendor.js -->
-    <!-- Xbower:js -->
-    <!-- Xendbower -->
-    <!-- Xendbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
 
-    <!-- Xbuild:js scripts/main.js -->
-    <!-- Xendbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

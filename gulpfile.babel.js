@@ -28,7 +28,7 @@ gulp.task('inject', () => {
   var generics = gulp.src('app/styles/generics/**/*.scss', {read: false});
   var components = gulp.src('app/styles/components/**/*.scss', {read: false});
   gulp.src('app/styles/main.scss')
-    .pipe($.inject(series(generics, components), {relative: true})) // This will always inject vendor files before app files
+    .pipe($.inject(series(generics, components), {relative: true})) // Always inject vendor files before app files
     .pipe(gulp.dest('app/styles/'));
 });
 
