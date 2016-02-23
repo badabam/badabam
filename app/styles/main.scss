@@ -5,6 +5,8 @@
 
 // bootstrap
 @import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/hover";
+@import "../../node_modules/bootstrap/scss/mixins/tab-focus";
 @import "../../node_modules/bootstrap/scss/normalize";
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
