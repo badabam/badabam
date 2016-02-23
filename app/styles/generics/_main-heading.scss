@@ -4,7 +4,7 @@
   font-weight: 100;
   margin: 0 0 30px;
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-only(xs) {
     font-weight: 300;
     margin: 0 0 20px;
   }

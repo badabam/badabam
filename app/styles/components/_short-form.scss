@@ -14,11 +14,16 @@
 .short-form__contact {
   color: $c-red;
 
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   a {
     color: $c-red !important;
     text-decoration: none;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-only(xs) {
       background-color: $c-gray-light;
       border-radius: 3px;
       display: block;

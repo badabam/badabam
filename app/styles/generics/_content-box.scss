@@ -4,7 +4,7 @@
   padding: 40px;
   width: 560px;
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-only(xs) {
     margin: 40px auto;
     padding: 20px;
     width: 400px;
