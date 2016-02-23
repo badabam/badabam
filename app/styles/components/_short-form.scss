@@ -1,8 +1,6 @@
 .short-form {
   @extend .big-shadow, .content-box;
 
-  margin: 80px auto;
-
   h1 {
     @extend .main-heading;
   }
@@ -14,12 +12,18 @@
 
 
 .short-form__contact {
-  display: flex;
-  justify-content: space-between;
   color: $c-red;
 
   a {
     color: $c-red !important;
     text-decoration: none;
+
+    @include media-breakpoint-down(xs) {
+      background-color: $c-gray-light;
+      border-radius: 3px;
+      display: block;
+      padding: 0 6px;
+      margin-bottom: 12px;
+    }
   }
 }

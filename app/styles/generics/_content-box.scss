@@ -1,8 +1,12 @@
 .content-box {
   background-color: $c-white;
+  margin: 80px auto;
   padding: 40px;
   width: 560px;
-  @media (max-width: 640px) {
+
+  @include media-breakpoint-down(xs) {
+    margin: 40px auto;
+    padding: 20px;
     width: 400px;
   }
 }

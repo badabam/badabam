@@ -1,20 +1,29 @@
 // bower:scss
 // endbower
 
-@import "variables";
+@import "variables"; // also overwrite bootstrap's variables
+
+// bootstrap
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/normalize";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/utilities-responsive";
+@import "../../node_modules/bootstrap/scss/media";
+@import "../../node_modules/bootstrap/scss/utilities-spacing";
+
+// basics
 @import "base";
 @import "helpers";
 
-@import "../../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../../node_modules/bootstrap/scss/utilities-responsive";
 
 /* inject:scss */
 @import "generics/_big-shadow.scss";
+@import "generics/_browserupgrade.scss";
 @import "generics/_content-box.scss";
 @import "generics/_main-heading.scss";
 @import "generics/_tags.scss";
 @import "components/_about-me.scss";
-@import "components/_browserupgrade.scss";
 @import "components/_main-header.scss";
 @import "components/_short-form.scss";
 /* endinject */

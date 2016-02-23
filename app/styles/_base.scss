@@ -11,21 +11,26 @@ body {
 
 body {
   background-color: $c-gray-light;
-  color: $c-gray-dark;
+  color: $c-gray-darker;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   font-weight: 200;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 300px;
 
-  @media (max-width: 640px) {
+  @include media-breakpoint-down(xs) {
     font-weight: 300;
+    font-size: 24px !important;
   }
 }
 
 a,
 a:link {
   color: $c-blue;
+}
+
+p {
+  margin: 0 0 30px;
 }
 
 ul {
