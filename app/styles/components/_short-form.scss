@@ -37,9 +37,14 @@
       padding: 12px;
       position: absolute;
       white-space: nowrap;
-      margin-bottom: 90px;
+      margin-bottom: 70px;
       left: 50%;
       transform: translateX(-50%);
+      animation: show-label 0.2s ease-in-out;
+
+      @include media-breakpoint-only(xs) {
+        margin-bottom: 110px;
+      }
     }
 
     &:after {
@@ -47,10 +52,28 @@
       border-top-color: $c-gray-dark;
       left: 50%;
       content: '';
-      margin-bottom: 70px;
+      margin-bottom: 50px;
       position: absolute;
       bottom: -100%;
       transform: translateX(-50%);
+      animation: show-label 0.2s ease-in-out;
+
+      @include media-breakpoint-only(xs) {
+        margin-bottom: 90px;
+      }
+    }
+
+    @keyframes show-label {
+      0% {
+        opacity: 0.5;
+        transform: translate(-50%, 20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+
     }
   }
 
@@ -60,6 +83,9 @@
   label {
     color: $c-red;
     text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     @include media-breakpoint-only(xs) {
       background-color: $c-gray-light;
