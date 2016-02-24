@@ -31,6 +31,10 @@
 
     &:before,
     &:after {
+      left: 50%;
+      opacity: 1;
+      position: absolute;
+      transform: translate(-50%, 0);
       transition: opacity 0.2s, transform 0.3s;
     }
 
@@ -40,11 +44,8 @@
       bottom: -100%;
       content: 'Lessers Passage 10, 22767 Hamburg';
       padding: 12px;
-      position: absolute;
       white-space: nowrap;
       margin-bottom: 70px;
-      left: 50%;
-      transform: translateX(-50%);
 
       @include media-breakpoint-only(xs) {
         margin-bottom: 110px;
@@ -54,12 +55,9 @@
     &:after {
       border: 10px solid transparent;
       border-top-color: $c-gray-dark;
-      left: 50%;
       content: '';
       margin-bottom: 50px;
-      position: absolute;
       bottom: -100%;
-      transform: translateX(-50%);
 
       @include media-breakpoint-only(xs) {
         margin-bottom: 90px;
