@@ -19,18 +19,23 @@
     justify-content: space-between;
   }
 
-    input[type=checkbox]:not(:checked) + label:before,
-    input[type=checkbox]:not(:checked) + label:after{
-        display: none;
-    }
+  input[type=checkbox]:not(:checked) + label:before,
+  input[type=checkbox]:not(:checked) + label:after {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
 
   label[for="toggle-address"] {
     cursor: pointer;
     position: relative;
 
-    &:before {
-      @extend .inverted, .big-shadow;
+    &:before,
+    &:after {
+      transition: opacity 0.2s, transform 0.3s;
+    }
 
+    &:before {
+      @extend .inverted;
       border-radius: 3px;
       bottom: -100%;
       content: 'Lessers Passage 10, 22767 Hamburg';
@@ -40,7 +45,6 @@
       margin-bottom: 70px;
       left: 50%;
       transform: translateX(-50%);
-      animation: show-label 0.2s ease-in-out;
 
       @include media-breakpoint-only(xs) {
         margin-bottom: 110px;
@@ -56,24 +60,10 @@
       position: absolute;
       bottom: -100%;
       transform: translateX(-50%);
-      animation: show-label 0.2s ease-in-out;
 
       @include media-breakpoint-only(xs) {
         margin-bottom: 90px;
       }
-    }
-
-    @keyframes show-label {
-      0% {
-        opacity: 0.5;
-        transform: translate(-50%, 20px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translate(-50%, 0);
-      }
-
     }
   }
 
@@ -83,6 +73,7 @@
   label {
     color: $c-red;
     text-decoration: none;
+
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
