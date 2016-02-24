@@ -31,6 +31,10 @@ a:link {
 
 p {
   margin: 0 0 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 ul {
