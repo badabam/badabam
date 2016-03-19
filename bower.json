@@ -4,6 +4,14 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "modernizr": "~2.8.1",
-    "bootstrap": "4"
+    "bootstrap": "4",
+    "tether": "^1.2.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "dependencies": {
+        "tether": "1.x"
+      }
+    }
   }
 }

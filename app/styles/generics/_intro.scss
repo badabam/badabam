@@ -1,0 +1,10 @@
+.intro {
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s ease-out;
+}
+
+.intro-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
