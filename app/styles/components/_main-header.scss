@@ -11,7 +11,7 @@
   font-size: $fs-huge;
   font-weight: 100;
 
-  @include media-breakpoint-only(xs) {
+  @include media-breakpoint-down(xs) {
     font-size: 3.2rem;
     font-family: inherit;
     letter-spacing: 1.6px;
@@ -24,7 +24,7 @@
   letter-spacing: 1.2px;
   margin-top: 10px;
 
-  @include media-breakpoint-only(xs) {
+  @include media-breakpoint-down(xs) {
     font-size: 1.1rem;
     font-weight: 300;
   }

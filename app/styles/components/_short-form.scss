@@ -13,10 +13,10 @@
 .short-form__contact {
   color: $c-red;
   position: relative;
-
   @include media-breakpoint-up(sm) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   input[type=checkbox]:not(:checked) + label:before,
@@ -42,12 +42,12 @@
       @extend .inverted;
       border-radius: 3px;
       bottom: -100%;
-      content: 'Lessers Passage 10, 22767 Hamburg';
+      content: attr(data-addr);
       padding: 12px;
       white-space: nowrap;
       margin-bottom: 70px;
 
-      @include media-breakpoint-only(xs) {
+      @include media-breakpoint-down(xxs) {
         margin-bottom: 110px;
       }
     }
@@ -59,7 +59,7 @@
       margin-bottom: 50px;
       bottom: -100%;
 
-      @include media-breakpoint-only(xs) {
+      @include media-breakpoint-down(xxs) {
         margin-bottom: 90px;
       }
     }
@@ -76,7 +76,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 
-    @include media-breakpoint-only(xs) {
+    @include media-breakpoint-down(xs) {
       background-color: $c-gray-light;
       border-radius: 3px;
       display: block;

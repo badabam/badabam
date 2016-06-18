@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   margin-bottom: 300px;
 
-  @include media-breakpoint-only(xs) {
+  @include media-breakpoint-down(xxs) {
     font-weight: 300;
     font-size: 24px !important;
   }

@@ -18,3 +18,17 @@ $fs-normal: 1rem;
 
 //grid
 $enable-flex: true !default;
+
+$grid-breakpoints: (
+  xxs: 0,
+  // Extra small screen / phone
+  xs: 400,
+  // Small screen / phone
+  sm: 600px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+) !default;

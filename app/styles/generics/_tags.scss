@@ -5,6 +5,10 @@
   font-weight: 300;
   margin: 0 3px 8px;
   padding: 2px 8px;
+
+  @include media-breakpoint-down(xxs) {
+    display: block;
+  }
 }
 
 .tag--extra {

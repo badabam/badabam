@@ -9,7 +9,7 @@
   $('.intro').each( (index, el) => {
     $(el)
       .addClass('intro-show')
-      .css({transitionDelay: index * 1 + 0.5 + 's'});
+      .css({transitionDelay: index * 0.4 + 1 + 's'});
   });
 
 }());
