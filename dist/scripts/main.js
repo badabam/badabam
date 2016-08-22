@@ -1,0 +1,1 @@
+"use strict";!function(){var n=window.$;document.querySelectorAll("label").onClick=function(){return!1},n(".intro").each(function(t,o){n(o).addClass("intro-show").css({transitionDelay:.4*t+1+"s"})})}();
