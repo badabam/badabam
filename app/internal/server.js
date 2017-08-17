@@ -25,9 +25,9 @@ function initServer () {
   });
 
   // reload
-  bs.watch('docs/*.html').on('change', bs.reload);
-  bs.watch('docs/css/*.css').on('change', bs.reload);
-  bs.watch('docs/js/*.js').on('change', bs.reload);
+  bs.watch('../docs/*.html').on('change', bs.reload);
+  bs.watch('../docs/css/*.css').on('change', bs.reload);
+  bs.watch('../docs/js/*.js').on('change', bs.reload);
 
   // recompile
   bs.watch('src/components/**/*.js').on('change', babelify);
@@ -42,7 +42,7 @@ function initServer () {
 }
 
 function babelify () {
-  fs.ensureDirSync('docs/js');
+  fs.ensureDirSync('../docs/js');
   exec('npm run babelify', (err, stdin, stdout) => {
     if (err) { throw err; }
     console.log('Babelify done.', stdout);

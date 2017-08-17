@@ -37,7 +37,7 @@ function getMatches (mainFileData, deferred) {
   });
 
   return Q.all(promises).done( () => {
-    fs_writeFile('docs/index.html', mainFileData)
+    fs_writeFile('../docs/index.html', mainFileData)
     .done(() => {
       console.log('Rendered index.html.');
       deferred.resolve();
