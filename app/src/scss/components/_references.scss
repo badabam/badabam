@@ -1,0 +1,8 @@
+.references {
+  @extend .content-box;
+  @extend .big-shadow;
+
+  h1 {
+    @extend .main-heading;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "bitwise": true,
+  "curly": true,
+  "esversion": 6,
+  "expr": true,
+  "jquery": true,
+  "latedef": false,
+  "maxdepth": 3,
+  "maxparams": 4,
+  "noarg": true,
+  "node": true,
+  "nonbsp": true,
+  "quotmark": "single",
+  "singleGroups": true,
+  "undef": true,
+  "unused": true,
+  "browser": true
+}
