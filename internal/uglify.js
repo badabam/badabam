@@ -14,7 +14,7 @@ function runUglify (paths) {
   var result = uglify.minify(paths, {
     mangle: false
   });
-  writeFile('../docs/js/scripts.min.js', result.code);
+  writeFile('docs/js/scripts.min.js', result.code);
 }
 
 function writeFile(file, content) {

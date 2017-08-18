@@ -14,7 +14,7 @@
     "uglify": "node internal/uglify.js"
   },
   "routes": {
-    "/": "../docs/"
+    "/": "docs/"
   },
   "keywords": [
     "badabam",
