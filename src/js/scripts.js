@@ -8,3 +8,7 @@ let intro = document.querySelectorAll('.intro');
 
 // fix safari label bug with empty function
 document.querySelectorAll('label').onClick = function () { return false; };
+
+
+import {ModusOperandi} from '../components/modus-operandi';
+new ModusOperandi();

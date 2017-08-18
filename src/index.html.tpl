@@ -19,6 +19,7 @@
   <body>
     <!-- partials/browserupgrade.html -->
     <!-- components/header.html -->
+    <!-- components/modus-operandi.html -->
     <!-- components/short-form.html -->
     <!-- components/about-me.html -->
     <!-- components/references.html -->

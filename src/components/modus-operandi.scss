@@ -1,0 +1,175 @@
+.modus-operandi {
+
+  h1 {
+    margin: 0;
+  }
+
+  .header {
+    @extend .content-box;
+    @extend .big-shadow;
+    margin-bottom: 20px;
+
+    h1 {
+      @extend .main-heading;
+    }
+  }
+
+  .header-list {
+    border: 1px solid #858F94;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 4px 16px;
+    position: relative;
+  }
+
+  .header-item {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    font-weight: 300;
+    color: #858F94;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.2s ease;
+
+    &.active {
+      transition: color 0.1s 0.1s ease;
+      color: white;
+    }
+  }
+
+  .header-slider {
+    background: #858F94;
+    border-radius: 3px;
+    height: calc(100% - 8px);
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: all 0.3s ease;
+    width: 130px;
+    z-index: 0;
+  }
+
+  .content-container {
+    margin-top: 20px;
+    position: relative;
+    height: 340px;
+  }
+
+  .content {
+    color: #858F94;
+    position: absolute;
+    opacity: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    &.active {
+      animation: showContent 0.3s 0.3s ease forwards;
+    }
+
+    &.inactive {
+      animation: hideContent 0.3s ease forwards;
+    }
+  }
+
+  @keyframes showContent {
+    0% {
+      display: block;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      z-index: 1;
+    }
+  }
+
+  @keyframes hideContent {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    99% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      display: none;
+    }
+  }
+
+  .item {
+    @extend .content-box;
+    @extend .big-shadow;
+
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 8px 36px;
+    overflow: hidden;
+    position: relative;
+    transition:
+      height 0.3s ease,
+      padding 0.3s ease,
+      margin 0.3s ease;
+    height: 42px;
+
+    h1 {
+      font-size: 18px;
+      font-weight: 300;
+      margin: 3px 0 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    &:before {
+      content: '▸';
+      position: absolute;
+      left: 12px;
+      color: #ddd;
+      transition: transform 0.4s ease;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: block;
+      bottom: 0;
+      height: 9px;
+      z-index: 1;
+      background: white;
+      border-bottom: 1px solid #eee;
+    }
+
+    &.active {
+      padding: 16px 36px;
+      height: 180px;
+      margin: 10px auto;
+      cursor: default;
+
+      &:before {
+        transform: rotate(90deg);
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+}
