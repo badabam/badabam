@@ -3,11 +3,10 @@ export class ModusOperandi {
   constructor() {
     this.menuIndex = 0;
 
-    const workItems    = this.getAll('.modus-operandi .item');
     const workContents = this.getAll('.modus-operandi .content');
+    const workItems    = this.getAll('.modus-operandi .content-item');
     const menuItems    = this.getAll('.modus-operandi .header-item');
     const slider       = this.get('.modus-operandi .header-slider');
-
 
     this.addClickHandler(workItems, event => {
       const subset = [].filter.call(workItems, item => {

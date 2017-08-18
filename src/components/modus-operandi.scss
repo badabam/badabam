@@ -56,18 +56,20 @@
   .content-container {
     margin-top: 20px;
     position: relative;
-    height: 340px;
+    height: 380px;
   }
 
   .content {
     color: #858F94;
-    position: absolute;
     opacity: 0;
     margin: 0 auto;
     left: 0;
     right: 0;
+    transition: height 0.3s ease;
+    position: absolute;
 
     &.active {
+      display: block;
       animation: showContent 0.3s 0.3s ease forwards;
     }
 
@@ -78,7 +80,6 @@
 
   @keyframes showContent {
     0% {
-      display: block;
       opacity: 0;
       transform: translateY(20px);
     }
@@ -96,17 +97,13 @@
       transform: translateY(0);
     }
 
-    99% {
+    100% {
       opacity: 0;
       transform: translateY(20px);
     }
-
-    100% {
-      display: none;
-    }
   }
 
-  .item {
+  .content-item {
     @extend .content-box;
     @extend .big-shadow;
 
@@ -125,19 +122,20 @@
       font-size: 18px;
       font-weight: 300;
       margin: 3px 0 10px;
+
+      &:before {
+        content: '▸';
+        position: absolute;
+        left: 12px;
+        color: #ddd;
+        transition: transform 0.4s ease;
+      }
     }
 
     p {
       margin-bottom: 15px;
     }
 
-    &:before {
-      content: '▸';
-      position: absolute;
-      left: 12px;
-      color: #ddd;
-      transition: transform 0.4s ease;
-    }
 
     &:after {
       content: '';
