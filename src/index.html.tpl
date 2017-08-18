@@ -6,7 +6,7 @@
     <meta name="keywords" content="Jeremias Erbs, UX, Frontend, Development, Angular, Freelance, Digital, Webapp">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jeremias Erbs, UX Design &amp; Frontend Development</title>
-    <!-- partials/meta/icons.html -->
+    <!-- partials/icons.html -->
     <link
       href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300&subset=latin'
       rel='stylesheet' type='text/css'>
@@ -17,13 +17,13 @@
 
   </head>
   <body>
-    <!-- partials/meta/browserupgrade.html -->
-    <!-- partials/header.html -->
-    <!-- partials/short-form.html -->
-    <!-- partials/about-me.html -->
-    <!-- partials/references.html -->
+    <!-- partials/browserupgrade.html -->
+    <!-- components/header.html -->
+    <!-- components/short-form.html -->
+    <!-- components/about-me.html -->
+    <!-- components/references.html -->
 
-    <!-- partials/meta/google-analytics.html -->
+    <!-- partials/google-analytics.html -->
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

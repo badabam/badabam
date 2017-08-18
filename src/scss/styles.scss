@@ -1,18 +1,18 @@
 
 @import "variables"; // also overwrite bootstrap's variables
-@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 @import "base";
 @import "helpers";
 
-@import "generics/_big-shadow.scss";
-@import "generics/_browserupgrade.scss";
-@import "generics/_content-box.scss";
-@import "generics/_intro.scss";
-@import "generics/_inverted.scss";
-@import "generics/_main-heading.scss";
-@import "generics/_tags.scss";
-@import "components/_about-me.scss";
-@import "components/_main-header.scss";
-@import "components/_references.scss";
-@import "components/_short-form.scss";
+@import "generics/big-shadow";
+@import "generics/browserupgrade";
+@import "generics/content-box";
+@import "generics/intro";
+@import "generics/inverted";
+@import "generics/main-heading";
+@import "generics/tags";
+@import "../components/about-me";
+@import "../components/main-header";
+@import "../components/references";
+@import "../components/short-form";
