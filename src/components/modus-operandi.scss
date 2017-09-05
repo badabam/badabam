@@ -7,7 +7,7 @@
   .header {
     @extend .content-box;
     @extend .big-shadow;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     h1 {
       @extend .main-heading;
@@ -49,12 +49,12 @@
     position: absolute;
     top: 4px;
     transition: all 0.3s ease;
-    width: 113px;
+    width: 131px;
     z-index: 0;
   }
 
   .content-container {
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     height: 380px;
   }

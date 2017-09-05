@@ -10,6 +10,7 @@ function build () {
   recreateDocsFolder();
   copyImages();
   copyRoutedDependencies();
+  copyCNAME();
   renderSass();
   renderPartials();
 }
@@ -25,6 +26,14 @@ function copyRoutedDependencies () {
     fs.createReadStream(sourcePath)
       .pipe(fs.createWriteStream(targetPath));
   });
+}
+
+function copyCNAME() {
+  fs.copySync('src/CNAME', 'docs/CNAME', {preserveTimestamps: true}, (err) => {
+    if (err) {console.error(err);}
+    console.log('Copied CNAME.');
+  });
+
 }
 
 function copyImages () {
