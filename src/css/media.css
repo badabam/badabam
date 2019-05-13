@@ -1,0 +1,8 @@
+.media {
+  display: grid;
+  gap: 40px;
+
+  @media (min-width: 420px) {
+    grid-template-columns: 1fr 2fr;
+  }
+}

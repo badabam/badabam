@@ -1,0 +1,17 @@
+.tags > * {
+  background-color: white;
+  color: var(--dark);
+  font-weight: 300;
+  margin: 0 4px 16px;
+  padding: 4px 10px;
+  display: block;
+
+  @media (min-width: 420px) {
+    display: inline-block;
+  }
+
+  .special {
+    background-color: var(--primary);
+    color: white;
+  }
+}
