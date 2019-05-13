@@ -1,5 +1,12 @@
 # Personal website of Jeremias Erbs
 
+## Used technology
+- parcel
+- posthtml
+- postcss
+- babel
+- nanocss
+
 
 ## Installation
 
@@ -9,16 +16,14 @@ $ npm install
 
 ## Develop and run server
 ```shell
-$ npm start #watches files, creates doc/ folder, runs server on localhost:3000 with browser-sync
+$ npm start
 ```
 
 ## Deploy for Github Pages or local view
-Just push master to Github. When running `npm start`, the folder `docs/` is already created
-and stays up to date. If you did changes without starting the dev server, you can run
 ```shell
 $ npm run build
 ```
-This will create a new version of the `docs/` folder as well.
+This will create a new version of the `docs/` folder. Push to `master`
 
 ## Anything else
 Look into the package.json
