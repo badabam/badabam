@@ -4,18 +4,21 @@ document.querySelectorAll('label').onClick = function() {
 }
 
 setTimeout(update, 5000)
+
 function update() {
   const i = Math.round(Math.random() * 360)
 
-  const hue1 = Math.random() * 60
-  const hue2 = 100 - hue1
+  const primary = `hsl(${i}deg, ${random(40, 60)}%, 60%)`
+  const secondary = `hsl(${i + 100 + random(0, 40)}deg, 30%, ${random(
+    20,
+    50
+  )}%)`
 
-  const [firstHue, secondHue] =
-    Math.random() < 0.2 ? [hue1, hue2] : [hue2, hue1]
+  document.body.style.setProperty('--primary', primary)
+  document.body.style.setProperty('--secondary', secondary)
+  setTimeout(update, 3000)
+}
 
-  const colors = [`hsl(${i}deg, 60%, 60%)`, `hsl(${i + 120}deg, 30%, 30%)`]
-
-  document.body.style.setProperty('--primary', colors[0])
-  document.body.style.setProperty('--secondary', colors[1])
-  setTimeout(update, 5000)
+function random(min, max) {
+  return Math.round(min + Math.random() * (max - min))
 }
