@@ -1,5 +1,4 @@
 :root {
-  --light: #f3f0e8;
   --dark: #3f3a4d;
   --primary: #e94664;
 }
@@ -13,7 +12,7 @@ body {
   gap: 80px;
   margin: 0 auto 100px;
   max-width: 600px;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--dark);
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
@@ -23,7 +22,6 @@ body {
 
   @media (min-width: 420px) {
     gap: 15vw;
-    padding: 40px;
     font-size: 22px;
   }
 }
@@ -41,10 +39,6 @@ h2 {
   margin: 0 0 30px;
 }
 
-p:first-child {
-  margin-top: 0;
-}
-
 ul {
   padding: 0;
 }
@@ -54,4 +48,8 @@ a:any-link {
   color: inherit;
   text-decoration: none;
   border-bottom: 2px solid var(--primary);
+}
+
+img {
+  width: 100%;
 }

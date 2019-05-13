@@ -6,5 +6,5 @@ img[src*='jeremias_erbs'] {
     linear-gradient(var(--dark), var(--dark));
   background-size: cover;
   background-blend-mode: lighten;
-  border: 2px solid var(--light);
+  border: 2px solid white;
 }

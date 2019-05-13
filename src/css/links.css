@@ -1,10 +1,9 @@
-.links {
-  display: grid;
-  grid-gap: 12px;
-  justify-items: flex-start;
+.links a {
+  display: block;
+  width: min-content;
+  margin: 10px;
 
   @media (min-width: 420px) {
-    grid-auto-columns: min-content;
-    grid-auto-flow: column;
+    display: inline;
   }
 }

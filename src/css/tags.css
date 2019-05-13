@@ -10,7 +10,7 @@
     display: inline-block;
   }
 
-  .special {
+  &.special {
     background-color: var(--primary);
     color: white;
   }

@@ -61,21 +61,17 @@
 
     <section>
       <h2>Über mich</h2>
-      <div class="media">
-        <img src="/img/jeremias_erbs.jpg">
-        <div>
-          <p>Seit bereits über 15 Jahren unterstütze ich Teams der besten
-            digitalen Unternehmen Deutschlands.</p>
-          <p>Meine Überzeugung ist es, dass man in einer Sache nur dann gut
-            sein
-            kann, wenn sie einem Spaß macht. Ich habe das Glück es zu lieben
-            neue
-            Dinge zu lernen.</p>
-          <p>Was ich tue, erfüllt mich mit Stolz und Freude. Diese
-            Begeisterung
-            versuche ich auch in anderen zu wecken.</p>
-        </div>
-      </div>
+      <img src="/img/jerry.jpg">
+      <p>Seit bereits über 15 Jahren unterstütze ich Teams der besten
+        digitalen Unternehmen Deutschlands.</p>
+      <p>Meine Überzeugung ist es, dass man in einer Sache nur dann gut
+        sein
+        kann, wenn sie einem Spaß macht. Ich habe das Glück es zu lieben
+        neue
+        Dinge zu lernen.</p>
+      <p>Was ich tue, erfüllt mich mit Stolz und Freude. Diese
+        Begeisterung
+        versuche ich auch in anderen zu wecken.</p>
     </section>
 
     <section>
@@ -102,31 +98,32 @@
     <footer class="contact">
       <h3>Kontakt</h3>
       <form>
-        <label>
-          Mobil
-          <input type="radio" name="details">
-          <div>
-            <a href="tel:+4915123421980">0151 23421980</a>
-          </div>
-        </label>
 
-        <label>
+        <input checked id="id_email" type="radio" name="details">
+        <label for="id_email">
           E-Mail
-          <input type="radio" name="details">
           <div>
             <module href="/html/email.html"></module>
           </div>
         </label>
 
-        <label>
-          Anschrift
-          <input type="radio" name="details">
+        <input id="id_tel" type="radio" name="details">
+        <label for="id_tel">
+          Mobil
+          <div>
+            <a href="tel:+4915123421980">0151 23421980</a>
+          </div>
+        </label>
+
+        <input id="id_address" type="radio" name="details">
+        <label for="id_address">
+          Post
           <span>Papageienweg 2<br>21365 Adendorf</span>
         </label>
 
-        <label>
-          Steuer-Nr.
-          <input type="radio" name="details">
+        <input id="id_taxes" type="radio" name="details">
+        <label for="id_taxes">
+          Steuern
           <div>
             St.–Nr. 33/111/17087<br>Ust-Id. DE307429808
           </div>

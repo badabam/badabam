@@ -7,17 +7,33 @@
     flex-wrap: wrap;
   }
 
-  label > * {
+  input {
     display: none;
-    border-radius: 2px;
-    position: absolute 100% 0 * 0;
-    margin-top: 10px;
-    padding: 10px;
-    background: var(--light);
-    color: var(--dark);
   }
 
-  input:checked + * {
-    display: initial;
+  label {
+    padding: 10px 0;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+
+    > * {
+      display: none;
+      border-radius: 2px;
+      position: absolute 100% 0 * 0;
+      padding: 10px;
+      color: var(--dark) white;
+      text-align: initial;
+    }
+  }
+
+  input:checked + label {
+    border-top-radius: 2px;
+    color: var(--dark) white;
+
+    > * {
+      margin-top: -2px;
+      display: initial;
+    }
   }
 }
