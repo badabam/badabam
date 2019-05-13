@@ -13,10 +13,7 @@ function update() {
   const [firstHue, secondHue] =
     Math.random() < 0.2 ? [hue1, hue2] : [hue2, hue1]
 
-  const colors = [
-    `hsl(${i}deg, ${firstHue}%, 60%)`,
-    `hsl(${i + 120}deg, ${secondHue}%, 30%)`,
-  ]
+  const colors = [`hsl(${i}deg, 60%, 60%)`, `hsl(${i + 120}deg, 30%, 30%)`]
 
   document.body.style.setProperty('--primary', colors[0])
   document.body.style.setProperty('--secondary', colors[1])
