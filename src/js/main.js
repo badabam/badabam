@@ -9,14 +9,14 @@ function update() {
   const i = Math.round(Math.random() * 360)
 
   const primary = `hsl(${i}deg, ${random(40, 60)}%, 60%)`
-  const secondary = `hsl(${i + 100 + random(0, 40)}deg, 30%, ${random(
+  const secondary = `hsl(${i + 120 + random(0, 40)}deg, 30%, ${random(
     20,
     50
   )}%)`
 
   document.body.style.setProperty('--primary', primary)
   document.body.style.setProperty('--secondary', secondary)
-  setTimeout(update, 3000)
+  setTimeout(update, 5000)
 }
 
 function random(min, max) {
