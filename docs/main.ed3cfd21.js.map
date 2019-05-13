@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/main.js"],"names":["document","querySelectorAll","onClick"],"mappings":";AACAA,SAASC,iBAAiB,SAASC,QAAU,WACpC,OAAA","file":"main.ed3cfd21.js","sourceRoot":"../src","sourcesContent":["// fix safari label bug with empty function\ndocument.querySelectorAll('label').onClick = function() {\n  return false\n}\n"]}
