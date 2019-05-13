@@ -4,8 +4,8 @@
   "description": "Personal website of Jeremias Erbs",
   "main": "index.html",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html -d docs --public-url /badabam",
+    "start": "parcel ./src/index.html -d docs",
+    "build": "parcel build ./src/index.html -d docs --public-url /badabam && cp ./src/CNAME ./docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

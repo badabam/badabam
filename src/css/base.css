@@ -1,19 +1,17 @@
-:root {
-  --dark: #3f3a4d;
-  --primary: #e94664;
-}
-
 * {
   box-sizing: border-box;
+  transition: all 1s ease;
 }
 
 body {
+  --secondary: #3f3a4d;
+  --primary: #e94664;
   display: grid;
-  gap: 80px;
-  margin: 0 auto 100px;
+  gap: 100px;
+  margin: 50px auto 100px;
   max-width: 600px;
   padding: 10px;
-  background-color: var(--dark);
+  background-color: var(--secondary);
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 26px;
@@ -21,7 +19,7 @@ body {
   line-height: 1.5;
 
   @media (min-width: 420px) {
-    gap: 15vw;
+    gap: 10vw;
     font-size: 22px;
   }
 }

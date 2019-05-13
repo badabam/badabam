@@ -3,7 +3,7 @@ img[src*='jeremias_erbs'] {
   width: 100%;
   padding-top: calc(461 / 346 * 100%);
   background-image: url(/img/jeremias_erbs.jpg),
-    linear-gradient(var(--dark), var(--dark));
+    linear-gradient(var(--secondary), var(--secondary));
   background-size: cover;
   background-blend-mode: lighten;
   border: 2px solid white;

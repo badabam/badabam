@@ -22,14 +22,14 @@
       border-radius: 2px;
       position: absolute 100% 0 * 0;
       padding: 10px;
-      color: var(--dark) white;
+      color: var(--secondary) white;
       text-align: initial;
     }
   }
 
   input:checked + label {
     border-top-radius: 2px;
-    color: var(--dark) white;
+    color: var(--secondary) white;
 
     > * {
       margin-top: -2px;
