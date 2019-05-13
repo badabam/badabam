@@ -5,8 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel ./src/index.html -d docs",
-    "build": "rm -rf ./docs && parcel build ./src/index.html -d docs && cp ./src/CNAME ./docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clear && parcel build ./src/index.html -d docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rm -rf ./docs ./cache"
   },
   "keywords": [],
   "author": "Jeremias Erbs <jerry@badabam.de> (http://www.badabam.de/)",
@@ -17,10 +18,21 @@
     "not Explorer 11",
     "not ExplorerMobile 11"
   ],
+  "_cache": {
+    "inDev": true,
+    "strategy": "default"
+  },
+  "cache": {
+    "globPatterns": [
+      "**/*.{html,js,css,jpg,png,woff,woff2}"
+    ]
+  },
   "devDependencies": {
     "autoprefixer": "9.5.1",
     "cssnano": "4.1.10",
     "parcel-bundler": "1.12.3",
+    "parcel-plugin-static-files-copy": "2.0.0",
+    "parcel-plugin-sw-cache": "0.2.7",
     "postcss-import": "12.0.1",
     "postcss-modules": "1.4.1",
     "postcss-nested": "4.1.2",
@@ -32,8 +44,5 @@
     "posthtml-md": "1.1.0",
     "posthtml-modules": "0.4.2",
     "sass": "1.20.1"
-  },
-  "dependencies": {
-    "base.css": "1.0.0"
   }
 }

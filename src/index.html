@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jeremias Erbs, UX Design &amp; Frontend Development</title>
     <module href="/html/icons.html"></module>
-
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="/manifest.webmanifest">
   </head>
   <body>
 
@@ -97,7 +97,7 @@
         <label for="id_email">
           E-Mail
           <div>
-            <module href="/html/email.html"></module>
+            <a href="mailto:jerry@badabam.de">jerry@badabam.de</a>
           </div>
         </label>
 
@@ -125,8 +125,15 @@
       </form>
 
     </footer>
-
-
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            const swName = '/sw.js'
+            navigator.serviceWorker.register(swName);
+          });
+        }
+        </script>
     <script src="/js/main.js"></script>
+
   </body>
 </html>
