@@ -1,23 +1,29 @@
-const UPDATE_SPEED = 8000
-export default function() {
-  let i = Math.round(Math.random() * 360)
+const UPDATE_SPEED = 6000
 
-  setTimeout(update, UPDATE_SPEED)
+export default function() {
+  let timeout = setTimeout(update, UPDATE_SPEED)
+  let i = randomNoBrown()
+
+  document.body.addEventListener('click', () => {
+    clearTimeout(timeout)
+    update()
+  })
 
   function update() {
-    i = (i + random(30, 120)) % 360
-    const primary = `hsl(${i}deg, ${random(40, 60)}%, 60%)`
-    const secondary = `hsl(${i + 120 + random(0, 40)}deg, 30%, ${random(
-      20,
-      50
-    )}%)`
+    i = randomNoBrown()
+    const primary = `hsl(${i + 120}deg, ${random(60, 80)}%, ${random(60, 70)}%)`
+    const secondary = `hsl(${i}deg, 30%, ${random(30, 45)}%)`
 
     document.documentElement.style.setProperty('--primary', primary)
     document.documentElement.style.setProperty('--secondary', secondary)
-    setTimeout(update, UPDATE_SPEED)
+    timeout = setTimeout(update, UPDATE_SPEED)
   }
+}
 
-  function random(min, max) {
-    return Math.round(min + Math.random() * (max - min))
-  }
+function randomNoBrown() {
+  return random(40, 350)
+}
+
+function random(min, max) {
+  return Math.round(min + Math.random() * (max - min))
 }

@@ -1,0 +1,23 @@
+.colors {
+  font-size: 0.7em;
+  position: fixed 20px 20px * *;
+  display: flex;
+  align-items: baseline;
+
+  .pause {
+    border: none;
+    background: transparent;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2px;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 2px;
+      height: 8px;
+      background: white;
+    }
+  }
+}

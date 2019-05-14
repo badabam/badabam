@@ -1,17 +1,17 @@
+/* eslint-disable global-require */
 module.exports = {
-  root: './src',
-  module: false,
-  plugins: [
-    require('postcss-import'),
+  'module': false,
+  'root': './src',
+  'plugins': [
     require('postcss-nested'),
+    require('postcss-import'),
     require('postcss-short'),
-    require('postcss-sorting')({ 'properties-order': 'alphabetical' }),
     require('autoprefixer'),
     require('cssnano')({
-      calc: false,
-      discardComments: {
-        removeAll: true,
-      },
-    }),
-  ],
+      'calc': false,
+      'discardComments': {
+        'removeAll': true
+      }
+    })
+  ]
 }

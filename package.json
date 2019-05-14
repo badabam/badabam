@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel ./src/index.html -d docs",
     "build": "npm run clear && parcel build ./src/index.html -d docs",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "eslint -c .eslintrc.js src/js/**/*.js",
     "clear": "rm -rf ./docs ./cache"
   },
   "keywords": [],
@@ -30,12 +30,14 @@
   "devDependencies": {
     "autoprefixer": "9.5.1",
     "cssnano": "4.1.10",
+    "eslint": "5.16.0",
     "parcel-bundler": "1.12.3",
     "parcel-plugin-static-files-copy": "2.0.0",
     "parcel-plugin-sw-cache": "0.2.7",
     "postcss-import": "12.0.1",
     "postcss-modules": "1.4.1",
     "postcss-nested": "4.1.2",
+    "postcss-sass": "0.3.5",
     "postcss-scss": "2.0.0",
     "postcss-short": "5.0.0",
     "postcss-sorting": "5.0.0",
@@ -44,5 +46,17 @@
     "posthtml-md": "1.1.0",
     "posthtml-modules": "0.4.2",
     "sass": "1.20.1"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badabam/badabam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/badabam/badabam/issues"
+  },
+  "homepage": "https://github.com/badabam/badabam#readme"
 }
