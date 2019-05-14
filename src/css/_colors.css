@@ -1,8 +1,9 @@
 .colors {
-  font-size: 0.7em;
-  position: fixed 10px 10px * *;
   display: flex;
   align-items: baseline;
+
+  position: fixed 10px 10px * *;
+  font-size: 0.7em;
 
   @media (hover: hover) {
     &::before {
