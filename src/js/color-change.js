@@ -4,7 +4,7 @@ export default function() {
   let timeout = setTimeout(update, UPDATE_SPEED)
   let i = randomNoBrown()
 
-  document.body.addEventListener('click', () => {
+  document.documentElement.addEventListener('click', () => {
     clearTimeout(timeout)
     update()
   })
