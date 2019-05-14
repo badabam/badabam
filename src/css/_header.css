@@ -2,7 +2,7 @@
   padding: 0 10px;
   :first-child {
     border-bottom: 2px solid var(--primary);
-    transition: border-color 2s ease;
+    transition: border-color var(--update_speed) ease;
     font-family: 'Lato', sans-serif;
     font-size: 3.1rem;
     font-weight: 100;

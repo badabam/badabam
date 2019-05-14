@@ -1,6 +1,8 @@
+const UPDATE_SPEED = 8000
 export default function() {
   let i = Math.round(Math.random() * 360)
-  setTimeout(update, 5000)
+
+  setTimeout(update, UPDATE_SPEED)
 
   function update() {
     i = (i + random(30, 120)) % 360
@@ -10,9 +12,9 @@ export default function() {
       50
     )}%)`
 
-    document.body.style.setProperty('--primary', primary)
-    document.body.style.setProperty('--secondary', secondary)
-    setTimeout(update, 5000)
+    document.documentElement.style.setProperty('--primary', primary)
+    document.documentElement.style.setProperty('--secondary', secondary)
+    setTimeout(update, UPDATE_SPEED)
   }
 
   function random(min, max) {
