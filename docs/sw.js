@@ -100,39 +100,47 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "05965473a12b787ee14082051736d5be"
+    "revision": "785418bddfe2e73f35b60144cfc417bd"
   },
   {
     "url": "jeremias_erbs.1ecf77cb.jpg",
     "revision": "06310b8781046484ad64d36370eb0088"
   },
   {
-    "url": "lato-v15-latin-100.2928202c.woff",
-    "revision": "4dfdd1c035c641accc4f3fedb7b73055"
+    "url": "main.24dfed61.js",
+    "revision": "e042749a5d00f84eafa4a078629b9adc"
   },
   {
-    "url": "lato-v15-latin-100.9c743f47.woff2",
-    "revision": "9ca14b8703044ec44627982d6d0e1e44"
+    "url": "raleway-v13-latin-100.0f8b2613.woff2",
+    "revision": "2d7a1238fea2c2307507a59e0855ff42"
   },
   {
-    "url": "main.ffdbdc99.js",
-    "revision": "b56631dbaa0e8222e1785c44387c9da4"
+    "url": "raleway-v13-latin-100.5eb1c522.woff",
+    "revision": "161ab2ad00fa982f54cb8f16f26a0af3"
   },
   {
-    "url": "source-sans-pro-v12-latin-200.1b8a45ea.woff",
-    "revision": "a3bea45981594e21f3a107386ba1a219"
+    "url": "raleway-v13-latin-300.368714ff.woff2",
+    "revision": "d724dad2e61905f488d048e51d45ae3e"
   },
   {
-    "url": "source-sans-pro-v12-latin-200.1c7e3a3c.woff2",
-    "revision": "d30190b81146365670a14117cefddec7"
+    "url": "raleway-v13-latin-300.cecc086e.woff",
+    "revision": "4baae0f7033718fc7a7a6dbb301db7cc"
   },
   {
-    "url": "styles.3f2d29e7.css",
-    "revision": "f2262c5f615203c6992e6d36c3b1e111"
+    "url": "raleway-v13-latin-500italic.94f070b2.woff2",
+    "revision": "3ffdda0b3d57c6a3ccfc61960ac10934"
+  },
+  {
+    "url": "raleway-v13-latin-500italic.d1335e55.woff",
+    "revision": "20ee2c52d2e06b53d5c90d1dafcf5026"
+  },
+  {
+    "url": "styles.0b529c40.css",
+    "revision": "d659607aa4c0ea033ae982438f11bee4"
   },
   {
     "url": "/",
-    "revision": "47ecc4c6ad08bc11b866a7aedf8194d3"
+    "revision": "129afb3dd14ea0f9a80461f204da105d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

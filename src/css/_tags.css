@@ -14,5 +14,7 @@
   &.special {
     background-color: var(--primary);
     color: white;
+    font-style: italic;
+    font-weight: 500;
   }
 }

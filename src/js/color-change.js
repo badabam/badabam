@@ -24,8 +24,8 @@ export default function() {
 
   function update() {
     i = randomNoBrown()
-    const primary = `hsl(${i + 120}deg, ${random(60, 80)}%, ${random(60, 70)}%)`
-    const secondary = `hsl(${i}deg, 30%, ${random(30, 45)}%)`
+    const primary = `hsl(${i + 120}deg, ${random(50, 70)}%, ${random(40, 60)}%)`
+    const secondary = `hsl(${i}deg, 30%, ${random(20, 45)}%)`
 
     document.documentElement.style.setProperty('--primary', primary)
     document.documentElement.style.setProperty('--secondary', secondary)
