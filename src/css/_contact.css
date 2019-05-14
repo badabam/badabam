@@ -15,12 +15,18 @@
 
   label {
     padding: 10px 0;
-    flex: 1;
+    flex: 1 1 min-content;
+    font-size: 0.8em;
     text-align: center;
     transition: none;
 
+    @media (min-width: 375px) {
+      font-size: 1em;
+    }
+
     > * {
       display: none;
+      font-size: 1em;
       border-radius: 2px;
       position: absolute 100% 0 * 0;
       padding: 20px 14px;

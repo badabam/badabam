@@ -26,6 +26,10 @@ body {
     gap: 10vw;
     font-size: 22px;
   }
+
+  @media (min-width: 2000px) {
+    gap: 200px;
+  }
 }
 
 h1 {
