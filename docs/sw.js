@@ -104,7 +104,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a60e743af48ca2e35e7857b04fa35d1e"
+    "revision": "34a822c0c30aacd6007832a27d59e3fa"
   },
   {
     "url": "jeremias_erbs.1ecf77cb.jpg",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/",
-    "revision": "b3119ea1f0ec17ccd7cae8626b92c299"
+    "revision": "25c82a9d2d0c6d5f9baa2984f50226b7"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
