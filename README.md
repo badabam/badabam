@@ -19,11 +19,12 @@ $ npm install
 $ npm start
 ```
 
-## Deploy for Github Pages or local view
+## Deploy to Github Pages
+Build a new version of the `docs/` folder. Push to `master`
+
 ```shell
-$ npm run build
+$ npm run deploy # Runs an sh script that builds, commits and pushes
 ```
-This will create a new version of the `docs/` folder. Push to `master`
 
 ## Anything else
 Look into the package.json
