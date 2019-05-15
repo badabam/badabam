@@ -1,20 +1,24 @@
-.tags > * {
-  background-color: white;
-  color: var(--secondary);
-  transition: var(--update_speed) ease;
-  transition-property: background-color, color;
-  margin: 0 4px 16px;
-  padding: 4px 10px;
-  display: block;
+.tags {
+  margin: 0;
 
-  @media (min-width: 420px) {
-    display: inline-block;
-  }
+  > * {
+    background-color: white;
+    color: var(--secondary);
+    transition: var(--update_speed) ease;
+    transition-property: background-color, color;
+    margin: 0 4px 16px;
+    padding: 4px 10px;
+    display: block;
 
-  &.special {
-    background-color: var(--primary);
-    color: white;
-    font-style: italic;
-    font-weight: 500;
+    @media (min-width: 420px) {
+      display: inline-block;
+    }
+
+    &.special {
+      background-color: var(--primary);
+      color: white;
+      font-style: italic;
+      font-weight: 500;
+    }
   }
 }
