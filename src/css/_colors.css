@@ -31,19 +31,19 @@
     animation: show 5s ease;
   }
 
-  @media (hover: hover) {
-    &::before {
-      content: attr(data-text);
-      white-space: nowrap;
-      position: absolute * calc(100% + 10px) * *;
-      transform-origin: calc(100% + 20px) center;
-      transform: rotate(-90deg);
-      opacity: 0;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-      z-index: -1;
-      pointer-events: none;
-    }
+  &::before {
+    content: attr(data-text);
+    white-space: nowrap;
+    position: absolute * calc(100% + 10px) * *;
+    transform-origin: calc(100% + 20px) center;
+    transform: rotate(-90deg);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    z-index: -1;
+    pointer-events: none;
+  }
 
+  @media (hover: hover) {
     &:hover::before {
       transform: rotate(0);
       opacity: 1;
