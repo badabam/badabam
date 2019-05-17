@@ -1,9 +1,35 @@
+@keyframes show {
+  15% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  25% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  90% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
 .colors {
   display: flex;
   align-items: baseline;
 
   position: fixed 20px 20px * *;
   font-size: 0.7em;
+
+  &.hint::before {
+    animation: show 5s ease;
+  }
 
   @media (hover: hover) {
     &::before {

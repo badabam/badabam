@@ -11,7 +11,9 @@ export default function colorChange() {
   let hue = randomBetween(0, hueRange)
   let timeout = setTimeout(update, UPDATE_SPEED)
 
-  updateText()
+  setTimeout(() => el.classList.add('hint'), UPDATE_SPEED + 1000)
+
+  updateText(el)
 
   button.addEventListener('click', () => {
     isActive = !isActive

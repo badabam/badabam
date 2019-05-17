@@ -80,15 +80,15 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "cfa06ec26bb304dd8d6b85046988b439"
+    "revision": "7af7831213081fc70c05a88cd6f6892b"
   },
   {
     "url": "jeremias_erbs.1ecf77cb.jpg",
     "revision": "06310b8781046484ad64d36370eb0088"
   },
   {
-    "url": "main.91edda0c.js",
-    "revision": "4fae7b24ab0284d294734701757f33f7"
+    "url": "main.38e877a8.js",
+    "revision": "df81e457cde164194e441a27aaa44e1a"
   },
   {
     "url": "mstile-144x144.d1051a3d.png",
@@ -135,12 +135,12 @@ self.__precacheManifest = [
     "revision": "20ee2c52d2e06b53d5c90d1dafcf5026"
   },
   {
-    "url": "styles.90ecea8b.css",
-    "revision": "49a5c8d7bdd9a8ca438d88f9eeba2e01"
+    "url": "styles.7f8d3aa0.css",
+    "revision": "a65634ac8eb5f31ee97b9e499c0bbc62"
   },
   {
     "url": "/",
-    "revision": "ec633d9b8b1535c6c83b03c099177d32"
+    "revision": "60442b867319392adf292d786582a333"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
