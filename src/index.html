@@ -3,8 +3,11 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Jeremias Erbs: Ich bin freier Spezialist für digitale Produkte und Services, Apps und Websites. Buchen Sie mich für herausragende Lösungen und zufriedene Teams.">
-    <meta name="keywords" content="Jeremias Erbs, UX, Frontend, Development, React, Freelance, Digital, Engineer">
+    <meta name="description" content="Jeremias Erbs: Ich bin freier Spezialist
+      für digitale Produkte und Services, Apps und Websites. Buchen Sie mich für
+      herausragende Lösungen und zufriedene Teams.">
+    <meta name="keywords" content="Jeremias Erbs, UX, Frontend, Development,
+      React, Freelance, Digital, Engineer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#3f3a4d" />
     <title>Jeremias Erbs: Digital Products</title>
@@ -14,122 +17,16 @@
   </head>
   <body>
 
-    <aside class="colors" data-pause="Farben anhalten:" data-play="Farben wechseln:">
-      <button class="pause"><span class="screenreader">Toggle color change</span></button>
-    </aside>
+    <module href="/html/color-button.html"></module>
+    <module href="/html/header.html"></module>
+    <module href="/html/intro.html"></module>
+    <module href="/html/keywords.html"></module>
+    <module href="/html/links.html"></module>
+    <module href="/html/career.html"></module>
+    <module href="/html/references.html"></module>
+    <module href="/html/contact.html"></module>
+    <module href="/html/add-service-worker.html"></module>
 
-    <h1 class="header">
-      <div>Jeremias Erbs<span class="screenreader">: </span></div>
-      <div>Software Developer &amp; UX Designer</div>
-    </h1>
-
-    <article>
-      <h2>Intro</h2>
-      <p>Ich bin freier Spezialist für digitale Produkte und Services, Apps und Websites. Buchen Sie mich für herausragende Lösungen und zufriedene Teams.</p>
-    </article>
-
-    <section>
-      <h2>Keywords</h2>
-      <ul class="tags">
-        <li>Digital Products</li>
-        <li>UX Lead</li>
-        <li>Web Development</li>
-        <li>Apps</li>
-        <li>Prototyping</li>
-        <li>Modern Web</li>
-        <li>Clean Code</li>
-        <li>People</li>
-        <li>Coaching</li>
-        <li>Mentoring</li>
-        <li>Humor</li>
-        <li class="special">Kein Bullshit</li>
-      </ul>
-    </section>
-
-    <section class="links">
-      <h2>Links</h2>
-      <a href="https://sourcerer.io/badabam" target="_blank" rel="noopener noreferrer">Code-Statistiken</a>
-      <a href="https://www.github.com/badabam" target="_blank" rel="noopener noreferrer">Github</a>
-      <a href="https://www.codepen.io/badabam" target="_blank" rel="noopener noreferrer">Codepen</a>
-      <a href="https://stackoverflow.com/users/2154343/jeremias-erbs" target="_blank" rel="noopener noreferrer">Stackoverflow</a>
-      <a href="https://www.xing.com/profile/Jeremias_Erbs/cv" target="_blank" rel="noopener noreferrer">Xing</a>
-      <a href="https://www.linkedin.com/in/jeremias-erbs-9a115616a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </section>
-
-    <article>
-      <h2>Werdegang</h2>
-      <img src="/img/jeremias_erbs.jpg" alt="Jeremias Erbs auf der Bühne">
-      <p>Seit 15 Jahren unterstütze ich Teams der besten digitalen Unternehmen Deutschlands.</p>
-      <p>Meine Überzeugung ist es, dass man in einer Sache nur gut sein kann, wenn sie einem Spaß macht. Zum Glück liebe ich es, Neues zu lernen.</p>
-      <p>Seit Anfang 2018 baue ich als Head of Curriculum und Coach das Startup <a href="https://neuefische.de" target="_blank" rel="noopener noreferrer">neuefische</a> mit auf. Das Können unserer Absolventen, die Begeisterung der Unternehmen und die Auszeichnung mit dem New Work Award 2019 zeigen, dass wir das Richtige tun.</p>
-    </article>
-
-    <section>
-      <h2>Referenzen</h2>
-      <ul class="tags">
-        <li>neuefische</li>
-        <li>Libri</li>
-        <li>SinnerSchrader</li>
-        <li>XING</li>
-        <li>Bauer Xcel Media</li>
-        <li>Coyo</li>
-        <li>Jung von Matt/next</li>
-        <li>SAP</li>
-        <li>Kolle Rebbe</li>
-        <li>La Red</li>
-        <li>Salon 91</li>
-        <li>Philipp und Keuntje</li>
-        <li>Arvato</li>
-        <li>Rapp Germany</li>
-      </ul>
-    </section>
-
-    <footer class="contact">
-      <h2>Impressum</h2>
-      <form>
-        <input checked id="id_email" type="radio" name="details">
-        <label for="id_email">
-          E-Mail
-          <div>
-            <a href="mailto:jerry@badabam.de">jerry@badabam.de</a>
-          </div>
-        </label>
-
-        <input id="id_tel" type="radio" name="details">
-        <label for="id_tel">
-          Mobil
-          <div>
-            <a href="tel:+4915123421980">0151 23421980</a>
-          </div>
-        </label>
-
-        <input id="id_address" type="radio" name="details">
-        <label for="id_address">
-          Post
-          <span>Papageienweg 2, 21365 Adendorf</span>
-        </label>
-
-        <input id="id_taxes" type="radio" name="details">
-        <label for="id_taxes">
-          Steuern
-          <span>
-            St.-Nr. 33/111/17087, USt-IdNr. DE307429808
-          </span>
-        </label>
-      </form>
-    </footer>
-    <script>
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-            const swName = '/sw.js'
-            try {
-              navigator.serviceWorker.register(swName);
-            } catch (error) {
-              console.log('No ServiceWorker registered.')
-            }
-          });
-        }
-    </script>
     <script src="/js/main.js"></script>
 
   </body>

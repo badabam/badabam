@@ -1,0 +1,12 @@
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      const swName = '/sw.js'
+      try {
+        navigator.serviceWorker.register(swName);
+      } catch (error) {
+        console.log('No ServiceWorker registered.')
+      }
+    });
+  }
+</script>
