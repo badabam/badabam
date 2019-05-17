@@ -1,12 +1,15 @@
 const UPDATE_SPEED = 6000
 
-export default function() {
-  let timeout = setTimeout(update, UPDATE_SPEED)
-  let i = randomNoBrown()
-  let isActive = true
+const hueMin = 180
+const hueMax = 340
+const hueRange = hueMax - hueMin
+let isActive = true
 
+export default function colorChange() {
   const el = document.querySelector('.colors')
   const button = el.querySelector('button')
+  let hue = randomBetween(0, hueRange)
+  let timeout = setTimeout(update, UPDATE_SPEED)
 
   updateText()
 
@@ -15,28 +18,36 @@ export default function() {
     button.classList.toggle('pause', isActive)
     button.classList.toggle('play', !isActive)
     isActive ? update() : clearTimeout(timeout)
-    updateText()
+    updateText(el)
   })
 
-  function updateText() {
-    el.dataset.text = isActive ? el.dataset.pause : el.dataset.play
-  }
-
   function update() {
-    i = randomNoBrown()
-    const primary = `hsl(${i + 120}deg, ${random(50, 70)}%, ${random(40, 60)}%)`
-    const secondary = `hsl(${i}deg, 30%, ${random(20, 45)}%)`
+    const range = { h: [160, 330], s: [20, 40], l: [30, 50] }
+    const [primary, secondary] = createColors(hue, range)
 
-    document.documentElement.style.setProperty('--primary', primary)
-    document.documentElement.style.setProperty('--secondary', secondary)
+    setColor(primary, secondary)
+    hue += randomBetween(30, 60)
     timeout = setTimeout(update, UPDATE_SPEED)
   }
 }
 
-function randomNoBrown() {
-  return random(40, 350)
+function createColors(hue, range) {
+  const h = 180 + (hue % 160)
+  const s = randomBetween(...range.s)
+  const l = randomBetween(...range.l)
+
+  return [`hsl(${(h + 120) % 360}deg, ${s + 15}%, ${l + 20}%)`, `hsl(${h}deg, ${s}%, ${l}%)`]
 }
 
-function random(min, max) {
-  return Math.round(min + Math.random() * (max - min))
+function setColor(primary, secondary) {
+  document.documentElement.style.setProperty('--primary', primary)
+  document.documentElement.style.setProperty('--secondary', secondary)
+}
+
+function updateText(el) {
+  el.dataset.text = isActive ? el.dataset.pause : el.dataset.play
+}
+
+function randomBetween(min, max) {
+  return min + Math.round(Math.random() * (max - min))
 }
