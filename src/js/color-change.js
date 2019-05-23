@@ -28,7 +28,7 @@ export default function colorChange() {
     const [primary, secondary] = createColors(hue, range)
 
     setColor(primary, secondary)
-    hue += randomBetween(30, 60)
+    hue += randomBetween(40, 120)
     timeout = setTimeout(update, UPDATE_SPEED)
   }
 }

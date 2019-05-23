@@ -1,3 +1,4 @@
-import colorChange from './color-change'
+//import colorChange from './color-change'
 
-colorChange()
+//colorChange()
+console.log('Looking for something? 😉')
