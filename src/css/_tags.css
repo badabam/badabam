@@ -2,8 +2,8 @@
   margin: 0;
 
   > * {
-    background-color: white;
-    color: var(--secondary);
+    background-color: var(--text);
+    color: var(--bg);
     transition: var(--update_speed) ease;
     transition-property: background-color, color;
     margin: 0 4px 16px;
@@ -15,8 +15,8 @@
     }
 
     &.special {
-      background-color: var(--primary);
-      color: white;
+      background-color: var(--accent);
+      color: var(--accent-text);
       font-style: italic;
       font-weight: 500;
     }

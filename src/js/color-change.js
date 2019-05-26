@@ -42,8 +42,8 @@ function createColors(hue, range) {
 }
 
 function setColor(primary, secondary) {
-  document.documentElement.style.setProperty('--primary', primary)
-  document.documentElement.style.setProperty('--secondary', secondary)
+  document.documentElement.style.setProperty('--accent', primary)
+  document.documentElement.style.setProperty('--bg', secondary)
 }
 
 function updateText(el) {

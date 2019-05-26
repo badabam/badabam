@@ -1,6 +1,9 @@
 :root {
-  --secondary: #3f3a4d;
-  --primary: #e94664;
+  --text: #fff;
+  --bg: #3f3a4d;
+  --light-bg: #fff2;
+  --accent: #e94664;
+  --accent-text: #fff;
   --update_speed: 0.5s;
 }
 
@@ -14,9 +17,9 @@ body {
   margin: 50px auto 150px;
   max-width: 600px;
   padding: 10px;
-  background-color: var(--secondary);
+  background-color: var(--bg);
   transition: background var(--update_speed) ease;
-  color: white;
+  color: var(--text);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 300;
@@ -39,7 +42,7 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: var(--text);
   font-size: 1.66666rem;
   margin: 0 0 30px;
 }
@@ -51,7 +54,7 @@ ul {
 a,
 a:any-link {
   padding-bottom: 3px;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid var(--accent);
   color: inherit;
   text-decoration: none;
 

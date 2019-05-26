@@ -2,7 +2,7 @@
   padding: 0 10px;
 
   :first-child {
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--accent);
     transition: border-color var(--update_speed) ease;
     font-size: 3.1rem;
     font-weight: 100;

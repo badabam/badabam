@@ -1,9 +1,10 @@
 @import './_base.css';
-@import './_colors.css';
-@import './_contact.css';
 @import './_fonts.css';
+@import './_utility.css';
+@import './_contact.css';
 @import './_header.css';
 @import './_links.css';
 @import './_media.css';
 @import './_tags.css';
-@import './_utility.css';
+
+@import './_color-change.css';
