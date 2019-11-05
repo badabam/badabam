@@ -1,0 +1,8 @@
+:root {
+  --text: #fdfdfd;
+  --bg: #458199;
+  --light-bg: hsl(349.1, 71.4%, 71.2%);
+  --accent: #ea8194;
+  --accent-text: #482020;
+  --update_speed: 0.5s;
+}

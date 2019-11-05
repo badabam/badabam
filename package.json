@@ -4,7 +4,7 @@
   "description": "Personal website of Jeremias Erbs",
   "main": "index.html",
   "scripts": {
-    "start": "parcel ./src/index.html -d docs",
+    "start": "node bundle.js",
     "build": "npm run clear && parcel build ./src/index.html -d docs",
     "deploy": "read -p 'Commit message: ' msg && npm run build && git add -A && git commit -m \"$msg\" && git push",
     "test": "eslint -c .eslintrc.js src/js/**/*.js",

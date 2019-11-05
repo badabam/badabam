@@ -1,12 +1,3 @@
-:root {
-  --text: #fff;
-  --bg: #3f3a4d;
-  --light-bg: #fff2;
-  --accent: #e94664;
-  --accent-text: #fff;
-  --update_speed: 0.5s;
-}
-
 * {
   box-sizing: border-box;
 }
