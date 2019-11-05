@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/main.js"],"names":["console","log"],"mappings":"AAAA;AAEA;AACAA,OAAO,CAACC,GAAR,CAAY,2BAAZ","file":"main.fb6bbcaf.js","sourceRoot":"../src","sourcesContent":["//import colorChange from './color-change'\n\n//colorChange()\nconsole.log('Looking for something? 😉')\n"]}
