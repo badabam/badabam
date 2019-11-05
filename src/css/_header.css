@@ -1,17 +1,17 @@
 .header {
   padding: 0 10px;
 
-  :first-child {
+  h1 :first-child {
     border-bottom: 2px solid var(--accent);
     transition: border-color var(--update_speed) ease;
     font-size: 3.1rem;
     font-weight: 100;
   }
 
-  :last-child {
+  h1 :last-child {
     font-size: 1.3rem;
     font-weight: 200;
     letter-spacing: 1.2px;
-    margin-top: 10px;
+    margin: 10px 0 80px;
   }
 }
