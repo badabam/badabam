@@ -22,3 +22,12 @@
     }
   }
 }
+
+.tags--special > * {
+  box-shadow: 4px 4px 0 var(--accent);
+}
+
+.tags--light > * {
+  background-color: var(--light-bg);
+  color: var(--text);
+}

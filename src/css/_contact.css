@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: var(--light-bg);
     border-top-radius: 2px;
+    gap: 1px;
   }
 
   input {
@@ -19,6 +19,7 @@
     font-size: 0.8em;
     text-align: center;
     transition: none;
+    background: var(--light-bg);
 
     @media (min-width: 375px) {
       font-size: 1em;
