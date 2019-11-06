@@ -15,7 +15,7 @@
 
   label {
     padding: 10px 6px;
-    flex: 1 1 min-content;
+    flex: 1 1 auto;
     font-size: 0.8em;
     text-align: center;
     transition: none;
