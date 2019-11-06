@@ -17,12 +17,18 @@ body {
   line-height: 1.5;
 
   @media (min-width: 420px) {
-    gap: 10vw;
+    gap: 8vw;
   }
 
   @media (min-width: 2000px) {
     gap: 200px;
   }
+}
+
+hr {
+  border: none;
+  height: 0;
+  border-bottom: 2px solid var(--accent);
 }
 
 h1 {

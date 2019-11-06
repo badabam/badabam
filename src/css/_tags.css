@@ -16,7 +16,7 @@
 
     &.special {
       background-color: var(--accent);
-      color: var(--accent-text);
+      color: var(--text);
       font-style: italic;
       font-weight: 500;
     }

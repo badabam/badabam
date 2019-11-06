@@ -19,7 +19,7 @@ const bundlerOptions = {
   global: 'moduleName', // Expose modules as UMD under this name, disabled by default
   minify: true, // Minify files, enabled if process.env.NODE_ENV === 'production'
   scopeHoist: false, // Turn on experimental scope hoisting/tree shaking flag, for smaller production bundles
-  bundleNodeModules: false, // By default, package.json dependencies are not included when using 'node' or 'electron' with 'target' option above. Set to true to adds them to the bundle, false by default
+  bundleNodeModules: true, // By default, package.json dependencies are not included when using 'node' or 'electron' with 'target' option above. Set to true to adds them to the bundle, false by default
   logLevel: 3, // 5 = save everything to a file, 4 = like 3, but with timestamps and additionally log http requests to dev server, 3 = log info, warnings & errors, 2 = log warnings & errors, 1 = log errors
   hmr: false, // Enable or disable HMR while watching
   sourceMaps: true, // Enable or disable sourcemaps, defaults to enabled (minified builds currently always create sourcemaps)
@@ -37,4 +37,4 @@ bs.watch('./src/**/*.*').on('change', () => {
   bundler.bundle()
 })
 
-bs.init({ server: './dist', port: 1234, reloadDelay: 500 })
+bs.init({ server: './dist', port: 1234, reloadDelay: 10 })

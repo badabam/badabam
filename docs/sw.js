@@ -81,7 +81,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "79c16e2ce58766e5ee27c3397852fab0"
+    "revision": "382e93364e68c797131a6d9c3c52c522"
   },
   {
     "url": "jeremias_erbs_profilbild.251dafb9.jpg",
@@ -92,8 +92,12 @@ self.__precacheManifest = [
     "revision": "06310b8781046484ad64d36370eb0088"
   },
   {
-    "url": "main.66c69a1a.js",
-    "revision": "48d756416c7cdb3b1762385635693a4b"
+    "url": "main.30901d69.css",
+    "revision": "b2e44c5de53d2bfb1ca90db930d2fd78"
+  },
+  {
+    "url": "main.f1560c38.js",
+    "revision": "5dcbc4ce2d58ec15556c882a3ed17d5f"
   },
   {
     "url": "mstile-144x144.d1051a3d.png",
@@ -140,12 +144,12 @@ self.__precacheManifest = [
     "revision": "20ee2c52d2e06b53d5c90d1dafcf5026"
   },
   {
-    "url": "styles.51567026.css",
-    "revision": "bec3cdefe06f4d1a4b86724fefb6a5b2"
+    "url": "styles.e864b1f6.css",
+    "revision": "056d50d6e36890c7610ce73f508ec617"
   },
   {
     "url": "/",
-    "revision": "d7366f146be4a8604f48c119dfdc4b31"
+    "revision": "fb4e0c16fd5aaf1bf82f30aaa2ece1f2"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});

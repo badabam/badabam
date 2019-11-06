@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/main.js"],"names":["console","log"],"mappings":";AAGAA,QAAQC,IAAI","file":"main.66c69a1a.js","sourceRoot":"../src","sourcesContent":["//import colorChange from './color-change'\n\n//colorChange()\nconsole.log('Looking for something? 😉')\n"]}

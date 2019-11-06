@@ -1,0 +1,16 @@
+[data-aos='reveal-image'] {
+  clip-path: circle(0% at 109px 97px);
+
+  &.aos-animate {
+    clip-path: circle(100% at 109px 97px);
+  }
+}
+
+[data-aos='scale-center-x'] {
+  transform-origin: center;
+  transform: scale(0, 1);
+
+  &.aos-animate {
+    transform: scale(1, 1);
+  }
+}
