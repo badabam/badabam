@@ -5,7 +5,7 @@
 body {
   display: grid;
   gap: 100px;
-  margin: 50px auto 150px;
+  margin: 20px auto 150px;
   max-width: 600px;
   padding: 20px;
   background-color: var(--bg);
@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
 
   @media (min-width: 420px) {
+    margin-top: 50px;
     gap: 8vw;
   }
 
