@@ -3,8 +3,14 @@
   width: min-content;
   margin: 0 20px 20px 0;
   white-space: nowrap;
+  padding: 4px 20px;
+  background: #fff3;
+  color: var(--text);
 
   @media (min-width: 420px) {
     display: inline-block;
+    padding: 0;
+    background: inherit;
+    color: inherit;
   }
 }

@@ -37,4 +37,4 @@ bs.watch('./src/**/*.*').on('change', () => {
   bundler.bundle()
 })
 
-bs.init({ server: './docs', port: 1234, reloadDelay: 500 })
+bs.init({ server: './dist', port: 1234, reloadDelay: 500 })
