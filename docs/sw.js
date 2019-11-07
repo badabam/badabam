@@ -81,7 +81,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "bac30c46f27702ba4eefb1b723fc31d6"
+    "revision": "189a0b75e09ce653d897e1209e7675e9"
   },
   {
     "url": "jeremias_erbs_profilbild.251dafb9.jpg",
@@ -149,7 +149,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/",
-    "revision": "89cf9c8d00e2e85539024834fee83df2"
+    "revision": "47fa88ae6e11d3bb9613f2bfb5f35c73"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
