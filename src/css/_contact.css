@@ -2,8 +2,9 @@
   position: relative;
 
   form {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: stretch;
+    grid-auto-flow: column;
     flex-wrap: wrap;
     border-top-radius: 2px;
     gap: 1px;
