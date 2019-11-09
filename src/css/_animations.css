@@ -1,5 +1,5 @@
 [data-aos='reveal-image'] {
-  clip-path: circle(0% at 109px 97px);
+  clip-path: circle(0% at center center);
 
   &.aos-animate {
     clip-path: circle(100% at center center);
