@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node bundle.js",
     "start_old": "parcel ./src/index.html -d docs --no-cache",
+    "optimize-images": "for file in src/img/*; do cwebp -q 80 \"$file\" -o \"${file%.*}.webp\"; done",
     "build": "npm run clear && parcel build ./src/index.html -d docs",
     "deploy": "read -p 'Commit message: ' msg && npm run build && git add -A && git commit -m \"$msg\" && git push",
     "test": "eslint -c .eslintrc.js src/js/**/*.js",
