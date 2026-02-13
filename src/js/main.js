@@ -21,3 +21,11 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 })
+
+document.querySelectorAll('.contact details summary').forEach((summary) => {
+  summary.addEventListener('click', (event) => {
+    if (event.currentTarget.parentElement.open) {
+      event.preventDefault()
+    }
+  })
+})
