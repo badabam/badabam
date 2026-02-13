@@ -1,52 +1,50 @@
 .contact {
   position: relative;
 
-  form {
+  .contact-tabs {
     display: grid;
     justify-content: stretch;
     grid-auto-flow: column;
-    flex-wrap: wrap;
     border-top-radius: 2px;
     gap: 1px;
   }
 
-  input {
-    display: none;
-  }
-
-  label {
-    padding: 10px 6px;
-    flex: 1 1 auto;
-    font-size: 0.8em;
+  details {
     text-align: center;
-    transition: none;
-    background: var(--light-bg);
 
-    @media (min-width: 375px) {
-      font-size: 1em;
+    > summary {
+      padding: 10px 6px;
+      font-size: 0.8em;
+      background: var(--light-bg);
+      cursor: pointer;
+      list-style: none;
+
+      @media (min-width: 375px) {
+        font-size: 1em;
+      }
+
+      &::-webkit-details-marker {
+        display: none;
+      }
     }
 
-    @media (min-width: 420px) {
-      flex: 1;
-    }
-
-    > * {
+    > :not(summary) {
       display: none;
+    }
+
+    &[open] > summary {
+      border-top-radius: 2px;
+      color: var(--bg) var(--text);
+    }
+
+    &[open] > :not(summary) {
+      display: initial;
       border-radius: 2px;
       position: absolute 100% 0 * 0;
       padding: 20px 14px;
+      margin-top: -2px;
       color: var(--bg) var(--text);
       text-align: initial;
-    }
-  }
-
-  input:checked + label {
-    border-top-radius: 2px;
-    color: var(--bg) var(--text);
-
-    > * {
-      margin-top: -2px;
-      display: initial;
     }
   }
 }
