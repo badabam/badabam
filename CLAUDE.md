@@ -8,7 +8,7 @@ Personal portfolio website for Jeremias Erbs (badabam.de). Static site built wit
 
 - `npm start` — Dev server (Parcel + Browser-sync)
 - `npm run build` — Production build to `docs/`
-- `npm test` — Lint JS with ESLint (`src/js/**/*.js`)
+- `npm test` — Lint JS with ESLint (`src/js/**/*.js`). Has pre-existing failures (formatting/comment style)
 - `npm run clear` — Remove `docs/`, `dist/`, `.cache`
 
 ## Architecture
