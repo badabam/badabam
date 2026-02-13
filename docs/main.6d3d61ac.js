@@ -4,6 +4,6 @@ var e;!function(t,o){"object"==typeof exports&&"object"==typeof module?module.ex
 },{}],"cOFZ":[function(require,module,exports) {
 
 },{}],"d6sW":[function(require,module,exports) {
-"use strict";var e=a(require("aos"));function a(e){return e&&e.__esModule?e:{default:e}}require("aos/dist/aos.css"),e.default.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99,offset:160,delay:0,duration:400,easing:"ease",once:!1,mirror:!1,anchorPlacement:"top-bottom"});
+"use strict";var e=t(require("aos"));function t(e){return e&&e.__esModule?e:{default:e}}require("aos/dist/aos.css"),e.default.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99,offset:160,delay:0,duration:400,easing:"ease",once:!1,mirror:!1,anchorPlacement:"top-bottom"}),document.querySelectorAll(".contact details summary").forEach(function(e){e.addEventListener("click",function(e){e.currentTarget.parentElement.open&&e.preventDefault()})});
 },{"aos":"RKkx","aos/dist/aos.css":"cOFZ"}]},{},["d6sW"], null)
-//# sourceMappingURL=/main.a753bb2a.js.map
+//# sourceMappingURL=/main.6d3d61ac.js.map
