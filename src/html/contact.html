@@ -1,34 +1,26 @@
-<footer data-aos="fade-up" class="contact">
+<section data-aos="fade-up" class="contact">
   <h2>Kontakt</h2>
-  <form>
-    <input checked id="id_email" type="radio" name="details">
-    <label for="id_email">
-      E-Mail
-      <div>
-        <a href="mailto:jerry@badabam.de">jerry@badabam.de</a>
-      </div>
-    </label>
+  <div class="contact-tabs">
+    <details name="contact" open>
+      <summary>E-Mail</summary>
+      <a href="mailto:jerry@badabam.de">jerry@badabam.de</a>
+    </details>
 
-    <input id="id_tel" type="radio" name="details">
-    <label for="id_tel">
-      Mobil
-      <div>
-        <a href="tel:+4915123421980">0151 23421980</a>
-      </div>
-    </label>
+    <details name="contact">
+      <summary>Mobil</summary>
+      <a href="tel:+4915123421980">0151 23421980</a>
+    </details>
 
-    <input id="id_address" type="radio" name="details">
-    <label for="id_address">
-      Post
-      <span>Auf dem Meere 33, 21335 Lüneburg</span>
-    </label>
+    <details name="contact">
+      <summary>Post</summary>
+      <p>Auf dem Meere 33, 21335 Lüneburg</p>
+    </details>
 
-    <input id="id_taxes" type="radio" name="details">
-    <label for="id_taxes">
-      Steuern
-      <span>
+    <details name="contact">
+      <summary>Steuern</summary>
+      <p>
         St.-Nr. 33/111/17087, USt-IdNr. DE307429808
-      </span>
-    </label>
-  </form>
-</footer>
+      </p>
+    </details>
+  </div>
+</section>
